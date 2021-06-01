@@ -1,0 +1,14 @@
+body {
+  background-color: #0072dc;
+}
+h1 {
+  text-align: center;
+
+  color: white;
+  border-width: 10%;
+}
+.border {
+  width: 5%;
+  margin: 0 auto;
+  border: #839190 solid 1px;
+}
