@@ -8,63 +8,75 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div class="border"></div>
-    <h1 class="title">Contactez-moi</h1>
+    <div class="titleContainer">
+      <div class="border"></div>
+      <h1 class="title">Contactez-moi</h1>
+    </div>
 
-    <form action="" method="POST">
-      <!-- Prénom -->
-      <label for="firstName">Prénom</label>
-      <input
-        type="text"
-        name="firstName"
-        id="firstName"
-        placeholder="Votre prénom"
-        required
-      />
-
-      <!-- Nom -->
-      <label for="lastName">Nom</label>
-      <input
-        type="text"
-        name="lastName"
-        id="lastName"
-        placeholder="Votre nom"
-        required
-      />
-
-      <!-- Email -->
-      <label for="mail">Email</label>
-      <input
-        type="mail"
-        name="mail"
-        id="mail"
-        placeholder="Votre Email"
-        required
-      />
-
-      <!-- Téléphone -->
-      <label for="phone">Téléphone</label>
-      <input
-        type="tel"
-        name="phone"
-        id="phone"
-        placeholder="Votre prénom"
-        required
-      />
-
-      <!-- Prénom -->
-      <label for="message">Message</label>
-      <textarea
-        name="message"
-        id="message"
-        cols="30"
-        rows="10"
-        placeholder="Votre message"
-        required
-      ></textarea>
-
-      <!-- Boutton -->
-      <button type="submit">Envoyer</button>
-    </form>
+    <div class="formContainer">
+      <!-- Formulaire -->
+      <form action="" method="POST">
+        <!-- Prénom -->
+        <div id="containerFirstName">
+          <label for="firstName">Prénom</label>
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            placeholder="Votre prénom"
+            required
+          />
+        </div>
+        <!-- Nom -->
+        <div id="containerLastName">
+          <label for="lastName">Nom</label>
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            placeholder="Votre nom"
+            required
+          />
+        </div>
+        <!-- Email -->
+        <div id="containerEmail">
+          <label for="mail">Email</label>
+          <input
+            type="mail"
+            name="mail"
+            id="mail"
+            placeholder="Votre Email"
+            required
+          />
+        </div>
+        <!-- Téléphone -->
+        <div id="containerPhone">
+          <label for="phone">Téléphone</label>
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="Votre prénom"
+            required
+          />
+        </div>
+        <!-- Message -->
+        <div id="containerMessage">
+          <label for="message">Message</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="45"
+            rows="8"
+            placeholder="Votre message"
+            required
+          ></textarea>
+        </div>
+        <!-- Boutton -->
+        <div id="btnSend">
+          <button type="submit">Envoyer</button>
+        </div>
+      </form>
+    </div>
   </body>
 </html>
